@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /*
+         # => ID
+        . => class
+        : => pseudo-class
+        :: => pseudo-element
+        >  => filho
+        */
+        
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        h2{
+            text-align: center;
+        }
+        div{
+            text-align: center;
+            display:inline-block;
+            background-color:blue;
+            height: 50px;
+            width: 100px;
+            padding: 10px;
+            border-radius: 15%;
+        
+            
+        }
+        a{
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: aqua;
+        }
+        a:hover{
+            color: black;
+            background-color: darkgray;
+            text-decoration: underline;
+        }
+        p{
+            text-align:justify;
+            text-indent: 5%;
+        }
+      
+        
+        a::after{
+            content:'[link]' ;
+            color: darkgray;
+            font-size: x-small;
+        }
+        #prim{
+            text-align: center;
+            background-color: darkgray;
+            border: 2px solid black;
+            margin: 5%;
+        }
+        div:hover{
+            background-color: yellow;
+            
+        }
+        #voltar{
+            color: blueviolet;
+            content: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="prim">aula 21!</h1>
+    <h2>Personalizando links</h2>
+    <ul>
+        <div>
+            <li><a href="https://youtube.com/@piauzinhogamer9452?si=CJ1bENjLa8di7ny8" target="_blank">canal do youtube</a></li>
+        </div>
+        <div>
+            <li><a href="https://www.bet365.com/bpa?affiliate=365_02495779&gclid=Cj0KCQjwpompBhDZARIsAFD_Fp-QlP5q28erRRHvVssd-B-CoQ26TAQKz1ueeUymNxCJt-cvmMs-QWoaAgIxEALw_wcB#/HO/" target="_blank"> visite a bet365</a> </li>
+        </div>
+        <div>
+            <li><a href="https://youtu.be/MQIpG0wdjZU?si=lXzCbRpucl3aKQXi" target="_blank">video do cazé</a></li>
+        </div>
+    </ul>
+    <h2>Para que serve a tag, text-decoration?</h2>
+    <p>
+        A tag eu coloco ela dentro de uma hover ou visited, serve para decorar o texto que criei, personalizando, podendo adicionar uma linha "anderline" para toda vez que eu passar o mouse por cima do texto ela ter um efeito de underline. <br>Ou deixando em "none" para a linha que ja fica fixa padrão quando crio um link de algum site na minha página, para ela desaparecer. em Ingles se escreve (underline)</br>
+    </p>
+    <h2>Para que serve o elemento VISTED?</h2>
+    <p>Serve para eu personalizar um link que ja foi visitado, podendo alterar a cor desse link, adiconar fundo e etc.</p>
+    <h2>como adiciono uma mensagem de aviso de link?</h2>
+    <p>
+        Para isso é preciso criar um a::after, traduzindo é um a href ::depois de clicar no link, dentro dessa tag eu crio a tag content, que significa conteudo (lembrar de colocar entre " ' ' " para o texto do conteudo), nele eu posso colocar qualquer texto ou simbolo, essa mensagem aparece "depois" que clico no link, caso queira Para avisar antes, eu preciso criar uma tag com before. lembre de usar "::" pois é um pseudo-elemento.
+        <a id="voltar" href="pseudo2.html">voltar</a>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias em html5 v32</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>tente abrir esses site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <p>vamos aprender uma nova tag chamada "pictures" que serve para trabalhar com imagens para telas diferentes, como tablet, celular e PC</p>
+<p>para usar o comando em nosso site, primeiro eu crio a tag "pictures" e dentro da minha tag, eu insiro as imagens que eu quero que seja dinamica para cada tipo de dispositivo, após abrir a tag pictures dentro do corpo da tag eu abro a tag img para abrir a imagem que eu quero inserir no meu site.</p>
+<p>após abrir a minha imagem, eu preciso abrir outra tag sempre acima da tag "img", com a tag "source:media:type" e definir a resoluçao máxima, altero para max-width caso esteja escrito min, e dentro dessa tag depois dos : eu coloco a resoluçao máxima da minha foto, e sempre acima da tag img, eu vou criando novos tamanhos que eu tenha disponivel para aquela imagem,seguindo uma ordem de tamanho do arquivo do maior para menor, sempre nomeando manualmente o diretório da "pasta/nome da foto" em "srcset=" e deixando em "type=" image/png sempre que o formato for PNG </p>
+<h3>segue abaixo um exemplo pronto</h3>
+<picture>
+    <source media="(max-width:750px )" srcset="imagens/foto-300.png" type="image/png">
+    <source media="(max-width:1050px )" srcset="imagens/foto-700.png" type="image/png">
+   <img src="imagens/foto-1000.png" alt="foto grande flexivel">
+</picture>
+<p>para cada<mark> source</mark> que eu abrir, eu tenho que colocar dentro do diretório a quantidade máxima de pixel que eu tenho da minha foto atual, exemplo: se minha foto GRANDE tem 900 pixels e minha foto menor tem 500 pixels, eu tenho que colocar no meu source media type que a quantidade máxima de px é de 950px e inserir em <mark>srcset</mark> o nome da minha foto menor, assim quando eu abrir em uma tela menor, eu terei o espaço de 950 pixel disponivel para uma foto de 500 pixel, </p>
+<h4>Mas porque 950px?</h4>
+<p>porque a minha foto tem que ter um espaço de pelo menos 50 pixel a mais para eu nao precisar rolar o site para o lado para ver minha foto inteira, e para que também quando eu inserir minha foto menor, o site entender que eu estou querendo que a foto se adpte a minha tela ou ao meu dispositivo.</p>
+<p>sempre, mas sempre que eu quiser inserir uma foto menor, a minha resoluçao max sempre tem que ser superior ao tamanho da minha foto grande, no caso da minha foto de 500 que é a pequena, eu preciso obrigatóriamente colocar 950px porque a minha foto grande tem 900px, ou seja, sempre que for adicionar uma foto menor, não modere no pixel.</p>
+<p>FIM DA AULA 32!!</p>
+<h1>AUDIOS NO NOSSO SITE</h1>
+<P> para adicionar audios em nosso site, basta colocar a Tag "audio src" e dentro da tag selecionar com contrl+space o audio que eu tenho guardado no arquivo do meu PC, para o audio reproduzir temos que usar na frente do nosso arquivo de audio após as aspas a tag "controls autoplay" para realizar o download basta criar a tag do "a href=". segue abaixo o exemplo meu patrão. </P>
+<p>escute agora o podcast do mister guanabara <audio src="audio/guanacast-33.mp3" controls autoplay></audio></p>
+<p>caso queira realizar o download, <a href="audio/guanacast-33.mp3" rel="download">clique aqui</a> para baixar o podcast inteiro por gentileza meu pratão, caso o link não funcione segure ou clique com botão direito e selecione guardar "arquivo como" </p>
+<p>para selecionar outros formatos de audio, funciona da mesma forma como usado em imagens acima, porem digitando manualmente usando a tag <mark>"source src"</mark> após usar a tag na frente do arquivo depois de aspas abrir a tag "type" e selecionar os tipos de audios variados, que são, mp3(audio/mpeg), wav(audio/wav), ogg(audio/ogg). </p>
+<p>e Fim da aula 33</p>
+
+
+    
+</body>
+</html>

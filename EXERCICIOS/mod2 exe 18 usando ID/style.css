@@ -1,0 +1,28 @@
+@charset "UTF-8";
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #08635e59;
+font-weight: 500;
+
+}
+h1#principal{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    box-shadow: 1px 3px 5px;
+    margin: auto;
+    padding: 3%;
+    border-radius: 80%;
+}
+.aula{ text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    box-shadow: 1px 3px 5px;
+    margin: auto;
+    padding: 3%;
+    border-radius: 80%;
+
+}
+.fim{
+    text-align: center;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+            background-color: rgba(255, 68, 0, 0.648);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            text-align: center;
+            background-color: aliceblue;
+            font-size: bold;
+            padding: 1px;
+            margin: 10px;
+            box-shadow: 2px 2px 1px black;
+        }
+        #funçoes{
+            background-color: aliceblue;
+            box-shadow: 2px 2px 1px black;
+    
+        }
+        #funçoes>article>h2{background-color: aliceblue;
+            text-align: center;
+            
+
+        }
+        aside{
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(1, 28, 51);
+            box-shadow: 2px 2px 1px black;
+        }
+        #explicando>h2{background-color: aliceblue;
+            text-align: center;
+        }
+        #explicando>aside{background-color:rgb(188, 186, 186) ;
+
+        }
+        #explicando>article>aside>p{
+            background-color: white;
+        }
+        #imagem>p{
+            background-color: white;
+            border-radius: 1%;
+    width: 432px;
+            margin: auto;
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+        #imagem{
+            background-color: rgb(209, 185, 157);
+            border-radius: 37%;
+            box-shadow: 2px 2px 1px black;
+        }
+        #ge{
+            background-color: green;
+            color: white;
+            outline-style: groove;
+            border-radius: 40%;
+        }
+        #bet{
+            background-color: darkcyan;
+            color: yellow;
+            outline-style: groove;
+        }
+        #hbo{
+            background-color: blueviolet;
+            color: white;
+            outline-color: aliceblue;
+            outline-style: groove;
+        }
+        #can{
+            background-color: rgb(75, 75, 228);
+            color: white;
+            outline-style: groove;  
+        }
+        #yt{
+            background-color: brown;
+            color: white;
+            outline-style: groove;
+            border-radius: 30%;
+        }
+        #resumo{
+            background-color: azure;
+            box-shadow: 2px 2px 1px black;
+        }
+        footer{
+            background-color: darkgray;
+            color: white;
+            margin: auto;
+            text-align: center;
+            width: 300px;
+            border-radius:32% ;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>meu site</h1>
+       
+    </header>
+    <main>
+        <section id="funçoes">
+            <article>
+                <h2>qual funçao de cada tag?</h2>
+               
+                
+                <aside>
+                    <p>em aside aprendemos que sempre é usado para fazer referencia ao meu texto principal.
+                    
+                    </p>
+                <p>
+                    dentro de article, é onde eu coloco meu titulo, ele é uma tag independente, onde posso criar um novo assunto dentro dessa tag
+                </p>
+                </aside>
+            </article>
+        </section>
+        <section id="explicando">
+            <h2>
+                para que serve as tags, header, section,article,aside, nav, main, footer?
+            </h2>
+           
+            
+            <article>
+                <aside>
+                    <p>
+                        as tags substituem as div´s, facilitando para o navegador a compressão dos códigos, tendo semantica em todas as tags, dando um signficado de pq estou criando essas caixas de texto, no exemplo de header, é onde eu crio meu cabeçalho do site, dentro do meu cabeçalho posso criar um titulo, um paragráfo e todos ele ficaram agrupados em caixa separadas, para quando eu quiser personalizar e deixar cada tag com sua denominada personalizaçao separada uma das outras.
+                    </p>
+                </aside>
+            </article>
+            <h2>o que é Main?</h2>
+            <p>A tag Main é onde deve ficar o conteudo principal do meu site.</p>
+            <h2>o que é Nav?</h2>
+            <p>
+                Nav, é onde eu posso colocar todos os meus links do site em um local só, podendo em style personalizar os links tudo de uma só vez.
+            </p>
+            <h2>o que é Section</h2>
+            <p>section, é responsavel em tirar o trabalho das div´s, responsavel por marcar as seçoes de conteudo da página, tendo a responsabilidade de poder ter todas as tags dentro dele. ele é responsavel por criar novos assuntos dentro de cada seçao, caso eu queira personalizar depois cada seçao usando uma id para cada seçao eu consigo isso. </p>
+            <h2>para que serve a tag Footer?</h2>
+            <p>
+                serve para dar créditos, rodapé do site ou coisa do tipo.
+            </p>
+            <h2>o que é article?</h2>
+            <p>article, é artigo traduzindo literalmente, serve para voce colocar seu conteudo dentro tendo um signficado mais semantico do que  uma section.</p>
+            <h2> o que é aside?</h2>
+            <p> aside,  representa uma seção de uma página que consiste de conteúdo que é tangencialmente relacionado ao conteúdo do seu entorno, que poderia ser considerado separado do conteúdo. Essas seções são, muitas vezes, representadas como barras laterais.</p>
+          
+            <h2>quando usar section?</h2>
+            <p>
+                Geralmente uso quando quero colocar em meu site uma foto e dar um contexto a essa foto, ai eu crio um paragrafo para selecionar meu texto ou titulo pra essa foto e em seguida mostro a imagem de que eu estou me referindo, ex:
+            </p>
+          
+          
+        </section>
+        <section id="imagem">
+            <p>foto de divulgaçao da WA GESSO 3D</p>
+            <img src="imagens/WA GESSO.png" width="300px" alt="foto">
+            <p>
+                feito isso dentro de style fica mais fácil de personalizar cada tag, com cores, fundo, fonte para cada pedaço de código que criei, é bom para personalizar cada parte separadamente e mudar a cara do site.
+            </p>
+        </section>
+    </main>
+    <h3>veja mais sobre o assunto nos links abaixo.</h3>
+    <p>abaixo estou criando apenas exemplos de nav´s, links meramentes ilustrastivos.</p>
+  
+    <nav id="links">
+        <a id="bet" href="https://www.bet365.com/bpa?affiliate=365_02495779&gclid=Cj0KCQjwpompBhDZARIsAFD_Fp-QlP5q28erRRHvVssd-B-CoQ26TAQKz1ueeUymNxCJt-cvmMs-QWoaAgIxEALw_wcB#/HO/" target="_blank">bet 365</a>
+        <a id="hbo" href="https://play.hbomax.com/page/urn:hbo:page:home" target="_blank">hbo max</a>
+        <a id="yt" href="https://youtube.com/" target="_blank"> youtube</a>
+        <a id="can" href="https://www.canva.com/pt_br/" target="_blank"> canva</a>
+        <a id="ge" href="https://ge.globo.com/"target="_blank">GE.com</a>
+        </nav>
+        <section id="resumo">
+                
+            <h2>Resumo</h2>
+                    <p>resumindo, a cada section que eu criar e quiser que cada section id "" tenha fundo amarelo, a outra seçao tenha fundo verde e mais uma seçao tenha fundo rosa, tudo isso é possivel, pois estou usando uma identidade para cada funçao que criei, podendo variar o assunto de cada novo texto dentro de uma section, tendo a liberdade de personalizar meu site em cada seçao criada.</p>
+               
+        </section>
+    <footer>aprendendo com o curso em video</footer>
+    <a href="boxlevel2.html">voltar</a>
+    
+</body>
+</html>
